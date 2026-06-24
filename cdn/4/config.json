@@ -75,7 +75,7 @@
             "lockLayout": true,
             "effect": {
               "SCROLL_IN": {
-                "type": "ZOOM_IN",
+                "type": "NONE",
                 "option": {
                   "direction": null
                 }
@@ -272,7 +272,7 @@
     "type": "Web Experience",
     "thumbnail": "thumbnail/thumbnail1782242999828.png"
   },
-  "timestamp": 1782305691083,
+  "timestamp": 1782306849955,
   "sharedThemeVariables": {
     "header": {},
     "body": {},
@@ -494,5 +494,5 @@
       "page_0": []
     }
   ],
-  "publishTimestamp": 1782305692067
+  "publishTimestamp": 1782306852627
 }

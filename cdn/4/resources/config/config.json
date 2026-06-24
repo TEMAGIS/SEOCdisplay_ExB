@@ -75,7 +75,7 @@
             "lockLayout": true,
             "effect": {
               "SCROLL_IN": {
-                "type": "ZOOM_IN",
+                "type": "NONE",
                 "option": {
                   "direction": null
                 }
@@ -265,7 +265,7 @@
       }
     }
   },
-  "timestamp": 1782305691083,
+  "timestamp": 1782306849955,
   "sharedThemeVariables": {
     "header": {},
     "body": {},
