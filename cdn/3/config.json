@@ -56,11 +56,11 @@
           "widgetId": "widget_2",
           "bbox": {
             "left": "87.6%",
-            "right": "0.0%",
+            "right": "1.00%",
             "top": "86.4%",
-            "bottom": "1.60%",
-            "width": "15.00%",
-            "height": "13.00%"
+            "bottom": "3.00%",
+            "width": "20.00%",
+            "height": "14.00%"
           },
           "setting": {
             "autoProps": {
@@ -263,9 +263,16 @@
         "isUploaded": true,
         "color": "var(--ref-palette-neutral-1100)"
       }
-    }
+    },
+    "isWebTier": false,
+    "clientId": "5Pykj9UAGYURfNuQ",
+    "express": false,
+    "title": "SEOCdisplay_ExB",
+    "description": "",
+    "type": "Web Experience",
+    "thumbnail": "thumbnail/thumbnail1782242999828.png"
   },
-  "timestamp": 1782304153211,
+  "timestamp": 1782305691083,
   "sharedThemeVariables": {
     "header": {},
     "body": {},
@@ -486,5 +493,6 @@
     {
       "page_0": []
     }
-  ]
+  ],
+  "publishTimestamp": 1782305692067
 }
