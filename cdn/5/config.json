@@ -56,9 +56,9 @@
           "widgetId": "widget_2",
           "bbox": {
             "left": "87.6%",
-            "right": "1.00%",
+            "right": "0.00%",
             "top": "86.4%",
-            "bottom": "3.00%",
+            "bottom": "5.00%",
             "width": "20.00%",
             "height": "14.00%"
           },
@@ -272,7 +272,7 @@
     "type": "Web Experience",
     "thumbnail": "thumbnail/thumbnail1782242999828.png"
   },
-  "timestamp": 1782306849955,
+  "timestamp": 1782314871949,
   "sharedThemeVariables": {
     "header": {},
     "body": {},
@@ -494,5 +494,5 @@
       "page_0": []
     }
   ],
-  "publishTimestamp": 1782306852627
+  "publishTimestamp": 1782314874270
 }
