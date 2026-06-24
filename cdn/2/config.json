@@ -1,0 +1,498 @@
+{
+  "pages": {
+    "page_0": {
+      "id": "page_0",
+      "mode": "FIT_WINDOW",
+      "type": "NORMAL",
+      "layout": {
+        "LARGE": "layout_0"
+      },
+      "isDefault": true,
+      "isVisible": true,
+      "label": "Page"
+    }
+  },
+  "layouts": {
+    "layout_0": {
+      "type": "FIXED",
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "0%",
+            "right": "0%",
+            "top": "0%",
+            "bottom": "0%",
+            "width": "100%",
+            "height": "100%"
+          },
+          "widgetId": "widget_1",
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": false,
+              "top": false,
+              "bottom": false,
+              "width": "STRETCH",
+              "height": "STRETCH"
+            },
+            "hCenter": false,
+            "vCenter": false,
+            "heightMode": "fixed",
+            "aspectRatio": 1
+          }
+        }
+      },
+      "order": [
+        "0"
+      ]
+    },
+    "layout_1": {
+      "type": "FIXED",
+      "label": "Map FixedLayout",
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_2",
+          "bbox": {
+            "left": "87.6%",
+            "right": "0.0%",
+            "top": "86.4%",
+            "bottom": "1.60%",
+            "width": "15.00%",
+            "height": "13.00%"
+          },
+          "setting": {
+            "autoProps": {
+              "height": "CUSTOM",
+              "left": true,
+              "right": false,
+              "top": true,
+              "bottom": false
+            },
+            "vCenter": false,
+            "hCenter": false,
+            "lockLayout": true,
+            "effect": {
+              "SCROLL_IN": {
+                "type": "ZOOM_IN",
+                "option": {
+                  "direction": null
+                }
+              }
+            }
+          }
+        }
+      },
+      "order": [
+        "0"
+      ]
+    }
+  },
+  "exbVersion": "1.20.0",
+  "mainSizeMode": "LARGE",
+  "theme": "themes/master/",
+  "forBuilderAttributes": {
+    "lockLayout": false
+  },
+  "template": "blankfullscreen",
+  "widgets": {
+    "widget_1": {
+      "uri": "widgets/arcgis/arcgis-map/",
+      "version": "1.20.0",
+      "config": {
+        "toolConfig": {
+          "canZoom": true,
+          "canHome": true,
+          "canSearch": true,
+          "canNavigation": true,
+          "canLayers": true,
+          "canFullScreen": false,
+          "canCompass": true,
+          "canLocate": true,
+          "canBaseMap": true
+        },
+        "isUseCustomMapState": false,
+        "initialMapState": null
+      },
+      "id": "widget_1",
+      "layouts": {
+        "MapFixedLayout": {
+          "LARGE": "layout_1"
+        }
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "5abc100b41c1476cb020df527ea9b497",
+          "mainDataSourceId": "5abc100b41c1476cb020df527ea9b497"
+        }
+      ],
+      "label": "Map",
+      "dataActions": {
+        "showOnMap": {
+          "config": {
+            "isUseCustomSymbol": true,
+            "isOperationalLayer": true,
+            "symbolOption": {
+              "pointSymbol": {
+                "type": "esriSMS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "angle": 0,
+                "xoffset": 0,
+                "yoffset": 0,
+                "size": 12,
+                "style": "esriSMSCircle",
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                }
+              },
+              "polylineSymbol": {
+                "type": "esriSLS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "width": 0.75,
+                "style": "esriSLSSolid"
+              },
+              "polygonSymbol": {
+                "type": "esriSFS",
+                "color": [
+                  255,
+                  255,
+                  0,
+                  150
+                ],
+                "outline": {
+                  "type": "esriSLS",
+                  "color": [
+                    255,
+                    255,
+                    0,
+                    150
+                  ],
+                  "width": 1,
+                  "style": "esriSLSSolid"
+                },
+                "style": "esriSFSSolid"
+              }
+            }
+          }
+        }
+      }
+    },
+    "widget_2": {
+      "uri": "widgets/common/timeline/",
+      "version": "1.20.0",
+      "inControllerUx": "offPanel",
+      "label": "Timeline",
+      "config": {
+        "dataSourceType": "IMAGERY_LAYER",
+        "honorTimeSettings": false,
+        "timeStyle": "MODERN",
+        "enablePlayControl": true,
+        "autoPlay": true,
+        "LoopContinuously": false,
+        "timeSettings": {
+          "layerList": null,
+          "startTime": {
+            "value": "MIN"
+          },
+          "endTime": {
+            "value": "MAX"
+          },
+          "timeDisplayStrategy": "CURRENT",
+          "dividedCount": 8,
+          "accuracy": "hour",
+          "stepLength": null,
+          "speed": "FAST"
+        },
+        "enableDisplayAccuracy": true,
+        "displayAccuracy": "minute"
+      },
+      "id": "widget_2",
+      "useDataSources": [
+        {
+          "dataSourceId": "5abc100b41c1476cb020df527ea9b497-19eb2f24796-layer-29",
+          "mainDataSourceId": "5abc100b41c1476cb020df527ea9b497-19eb2f24796-layer-29",
+          "rootDataSourceId": "5abc100b41c1476cb020df527ea9b497"
+        }
+      ],
+      "style": {
+        "borderRadius": {
+          "number": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "unit": "px"
+        }
+      }
+    }
+  },
+  "widgetsManifest": {},
+  "views": {},
+  "sections": {},
+  "dialogs": {},
+  "messageConfigs": {},
+  "attributes": {
+    "portalUrl": "https://TNEMA.maps.arcgis.com",
+    "favicon": {
+      "svg": "${appResourceUrl}/images/icon_picker_in_setting/1782242986523.png",
+      "properties": {
+        "filename": "1782242986523.png",
+        "originalName": "TN-logo.png",
+        "path": "${appResourceUrl}/images/icon_picker_in_setting/1782242986523.png",
+        "inlineSvg": false,
+        "isUploaded": true,
+        "color": "var(--ref-palette-neutral-1100)"
+      }
+    },
+    "isWebTier": false,
+    "clientId": "5Pykj9UAGYURfNuQ",
+    "express": false,
+    "title": "SEOCdisplay_ExB",
+    "description": "",
+    "type": "Web Experience",
+    "thumbnail": "thumbnail/thumbnail1782242999828.png"
+  },
+  "timestamp": 1782304153211,
+  "sharedThemeVariables": {
+    "header": {},
+    "body": {},
+    "button": {}
+  },
+  "mainLocale": "en-us",
+  "dataSources": {
+    "5abc100b41c1476cb020df527ea9b497": {
+      "type": "WEB_MAP",
+      "itemId": "5abc100b41c1476cb020df527ea9b497",
+      "id": "5abc100b41c1476cb020df527ea9b497",
+      "portalUrl": "https://TNEMA.maps.arcgis.com",
+      "sourceLabel": "SEOCdisplay_ExB_PublicGV",
+      "childDataSourceJsons": {
+        "19eb2f24796-layer-29": {
+          "id": "5abc100b41c1476cb020df527ea9b497-19eb2f24796-layer-29",
+          "type": "IMAGERY_LAYER",
+          "sourceLabel": "Radar base reflectivity time",
+          "url": "https://mapservices.weather.noaa.gov/eventdriven/rest/services/radar/radar_base_reflectivity_time/ImageServer",
+          "query": {
+            "id": "5abc100b41c1476cb020df527ea9b497-19eb2f24796-layer-29",
+            "label": "Radar base reflectivity time",
+            "refreshInterval": 600
+          }
+        },
+        "19bdd36d61c-layer-26": {
+          "id": "5abc100b41c1476cb020df527ea9b497-19bdd36d61c-layer-26",
+          "type": "GROUP_LAYER",
+          "sourceLabel": "Current Weather and Wind Station Data",
+          "childDataSourceJsons": {
+            "19bdd36d838-layer-28": {
+              "id": "5abc100b41c1476cb020df527ea9b497-19bdd36d61c-layer-26-19bdd36d838-layer-28",
+              "type": "FEATURE_LAYER",
+              "sourceLabel": "Stations: Wind Speed & Temp",
+              "portalUrl": "https://www.arcgis.com",
+              "itemId": "cb1886ff0a9d4156ba4d2fadd7e8a139",
+              "layerId": "0",
+              "url": "https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/NOAA_METAR_current_wind_speed_direction_v1/FeatureServer/0",
+              "isHidden": true
+            },
+            "19bdd36d837-layer-27": {
+              "id": "5abc100b41c1476cb020df527ea9b497-19bdd36d61c-layer-26-19bdd36d837-layer-27",
+              "type": "FEATURE_LAYER",
+              "sourceLabel": "Buoys",
+              "portalUrl": "https://www.arcgis.com",
+              "itemId": "cb1886ff0a9d4156ba4d2fadd7e8a139",
+              "layerId": "1",
+              "url": "https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/NOAA_METAR_current_wind_speed_direction_v1/FeatureServer/1",
+              "isHidden": true
+            }
+          },
+          "label": "Current Weather and Wind Station Data",
+          "isHidden": true
+        },
+        "1922eadf7a0-layer-14": {
+          "id": "5abc100b41c1476cb020df527ea9b497-1922eadf7a0-layer-14",
+          "type": "GROUP_LAYER",
+          "sourceLabel": "Active Hurricanes, Cyclones and Typhoons",
+          "childDataSourceJsons": {
+            "1922eadfa5f-layer-25": {
+              "id": "5abc100b41c1476cb020df527ea9b497-1922eadf7a0-layer-14-1922eadfa5f-layer-25",
+              "type": "FEATURE_LAYER",
+              "sourceLabel": "Forecast Position",
+              "portalUrl": "https://www.arcgis.com",
+              "itemId": "248e7b5827a34b248647afb012c58787",
+              "layerId": "0",
+              "url": "https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/Active_Hurricanes_v1/FeatureServer/0"
+            },
+            "1922eadfa5f-layer-24": {
+              "id": "5abc100b41c1476cb020df527ea9b497-1922eadf7a0-layer-14-1922eadfa5f-layer-24",
+              "type": "FEATURE_LAYER",
+              "sourceLabel": "Observed Position",
+              "portalUrl": "https://www.arcgis.com",
+              "itemId": "248e7b5827a34b248647afb012c58787",
+              "layerId": "1",
+              "url": "https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/Active_Hurricanes_v1/FeatureServer/1"
+            },
+            "1922eadfa5e-layer-23": {
+              "id": "5abc100b41c1476cb020df527ea9b497-1922eadf7a0-layer-14-1922eadfa5e-layer-23",
+              "type": "FEATURE_LAYER",
+              "sourceLabel": "Forecast Track",
+              "portalUrl": "https://www.arcgis.com",
+              "itemId": "248e7b5827a34b248647afb012c58787",
+              "layerId": "2",
+              "url": "https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/Active_Hurricanes_v1/FeatureServer/2"
+            },
+            "1922eadfa5e-layer-22": {
+              "id": "5abc100b41c1476cb020df527ea9b497-1922eadf7a0-layer-14-1922eadfa5e-layer-22",
+              "type": "FEATURE_LAYER",
+              "sourceLabel": "Observed Track",
+              "portalUrl": "https://www.arcgis.com",
+              "itemId": "248e7b5827a34b248647afb012c58787",
+              "layerId": "3",
+              "url": "https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/Active_Hurricanes_v1/FeatureServer/3"
+            },
+            "1922eadfa5e-layer-21": {
+              "id": "5abc100b41c1476cb020df527ea9b497-1922eadf7a0-layer-14-1922eadfa5e-layer-21",
+              "type": "FEATURE_LAYER",
+              "sourceLabel": "Forecast Error Cone",
+              "portalUrl": "https://www.arcgis.com",
+              "itemId": "248e7b5827a34b248647afb012c58787",
+              "layerId": "4",
+              "url": "https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/Active_Hurricanes_v1/FeatureServer/4"
+            },
+            "1922eadfa5e-layer-20": {
+              "id": "5abc100b41c1476cb020df527ea9b497-1922eadf7a0-layer-14-1922eadfa5e-layer-20",
+              "type": "FEATURE_LAYER",
+              "sourceLabel": "Watches and Warnings",
+              "portalUrl": "https://www.arcgis.com",
+              "itemId": "248e7b5827a34b248647afb012c58787",
+              "layerId": "5",
+              "url": "https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/Active_Hurricanes_v1/FeatureServer/5"
+            },
+            "1922eadfa5d-layer-19": {
+              "id": "5abc100b41c1476cb020df527ea9b497-1922eadf7a0-layer-14-1922eadfa5d-layer-19",
+              "type": "FEATURE_LAYER",
+              "sourceLabel": "Tropical Storm Force (34kts)",
+              "portalUrl": "https://www.arcgis.com",
+              "itemId": "248e7b5827a34b248647afb012c58787",
+              "layerId": "7",
+              "url": "https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/Active_Hurricanes_v1/FeatureServer/7"
+            },
+            "1922eadfa5d-layer-18": {
+              "id": "5abc100b41c1476cb020df527ea9b497-1922eadf7a0-layer-14-1922eadfa5d-layer-18",
+              "type": "FEATURE_LAYER",
+              "sourceLabel": "Strong Tropical Storm (50kts)",
+              "portalUrl": "https://www.arcgis.com",
+              "itemId": "248e7b5827a34b248647afb012c58787",
+              "layerId": "8",
+              "url": "https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/Active_Hurricanes_v1/FeatureServer/8"
+            },
+            "1922eadfa5d-layer-17": {
+              "id": "5abc100b41c1476cb020df527ea9b497-1922eadf7a0-layer-14-1922eadfa5d-layer-17",
+              "type": "FEATURE_LAYER",
+              "sourceLabel": "Hurricane Force (64kts+)",
+              "portalUrl": "https://www.arcgis.com",
+              "itemId": "248e7b5827a34b248647afb012c58787",
+              "layerId": "9",
+              "url": "https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/Active_Hurricanes_v1/FeatureServer/9"
+            },
+            "1922eadfa5d-layer-16": {
+              "id": "5abc100b41c1476cb020df527ea9b497-1922eadf7a0-layer-14-1922eadfa5d-layer-16",
+              "type": "FEATURE_LAYER",
+              "sourceLabel": "Raw 1 10th Degree Data (All)",
+              "portalUrl": "https://www.arcgis.com",
+              "itemId": "248e7b5827a34b248647afb012c58787",
+              "layerId": "10",
+              "url": "https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/Active_Hurricanes_v1/FeatureServer/10"
+            },
+            "1922eadfa5c-layer-15": {
+              "id": "5abc100b41c1476cb020df527ea9b497-1922eadf7a0-layer-14-1922eadfa5c-layer-15",
+              "type": "FEATURE_LAYER",
+              "sourceLabel": "Observed Wind Swath",
+              "portalUrl": "https://www.arcgis.com",
+              "itemId": "248e7b5827a34b248647afb012c58787",
+              "layerId": "11",
+              "url": "https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/Active_Hurricanes_v1/FeatureServer/11"
+            }
+          }
+        },
+        "18cb1ac9aae-layer-83": {
+          "id": "5abc100b41c1476cb020df527ea9b497-18cb1ac9aae-layer-83",
+          "type": "GROUP_LAYER",
+          "sourceLabel": "TEMA_Regions_and_Districts view",
+          "childDataSourceJsons": {
+            "18cb1ac9b58-layer-85": {
+              "id": "5abc100b41c1476cb020df527ea9b497-18cb1ac9aae-layer-83-18cb1ac9b58-layer-85",
+              "type": "FEATURE_LAYER",
+              "sourceLabel": "TEMA Regions",
+              "portalUrl": "https://www.arcgis.com",
+              "itemId": "ea38d3f1b45f4f15bd3ed633216156f4",
+              "layerId": "0",
+              "url": "https://services1.arcgis.com/kILp9lqGUeOhnDbI/arcgis/rest/services/TEMA_Regions_and_Districts_view/FeatureServer/0"
+            },
+            "18cb1ac9b57-layer-84": {
+              "id": "5abc100b41c1476cb020df527ea9b497-18cb1ac9aae-layer-83-18cb1ac9b57-layer-84",
+              "type": "FEATURE_LAYER",
+              "sourceLabel": "TEMA Display",
+              "portalUrl": "https://www.arcgis.com",
+              "itemId": "ea38d3f1b45f4f15bd3ed633216156f4",
+              "layerId": "1",
+              "url": "https://services1.arcgis.com/kILp9lqGUeOhnDbI/arcgis/rest/services/TEMA_Regions_and_Districts_view/FeatureServer/1"
+            }
+          }
+        },
+        "18cb1b69abc-layer-137": {
+          "id": "5abc100b41c1476cb020df527ea9b497-18cb1b69abc-layer-137",
+          "type": "FEATURE_LAYER",
+          "sourceLabel": "World Time Zones",
+          "portalUrl": "https://www.arcgis.com",
+          "itemId": "312cebfea2624e108e234220b04460b8",
+          "layerId": "0",
+          "url": "https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/World_Time_Zones/FeatureServer/0"
+        },
+        "195250932f0-layer-26": {
+          "id": "5abc100b41c1476cb020df527ea9b497-195250932f0-layer-26",
+          "type": "FEATURE_LAYER",
+          "sourceLabel": "USA Weather Watches and Warnings - Events Ordered by Size and Severity-Severe and Extreme",
+          "portalUrl": "https://www.arcgis.com",
+          "itemId": "a6134ae01aad44c499d12feec782b386",
+          "layerId": "6",
+          "url": "https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/NWS_Watches_Warnings_v1/FeatureServer/6"
+        },
+        "NWS_Watches_Warnings_v1_3343": {
+          "id": "5abc100b41c1476cb020df527ea9b497-NWS_Watches_Warnings_v1_3343",
+          "type": "FEATURE_LAYER",
+          "sourceLabel": "USA Weather Watches and Warnings - Events Ordered by Size and Severity",
+          "portalUrl": "https://www.arcgis.com",
+          "itemId": "a6134ae01aad44c499d12feec782b386",
+          "layerId": "6",
+          "url": "https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/NWS_Watches_Warnings_v1/FeatureServer/6"
+        }
+      },
+      "isHidden": false
+    }
+  },
+  "pageStructure": [
+    {
+      "page_0": []
+    }
+  ],
+  "publishTimestamp": 1782304157705
+}
