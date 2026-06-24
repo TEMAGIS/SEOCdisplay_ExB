@@ -59,7 +59,7 @@
             "right": "0.00%",
             "top": "86.4%",
             "bottom": "5.00%",
-            "width": "20.00%",
+            "width": "30.00%",
             "height": "14.00%"
           },
           "setting": {
@@ -272,7 +272,7 @@
     "type": "Web Experience",
     "thumbnail": "thumbnail/thumbnail1782242999828.png"
   },
-  "timestamp": 1782314871949,
+  "timestamp": 1782321085081,
   "sharedThemeVariables": {
     "header": {},
     "body": {},
@@ -494,5 +494,5 @@
       "page_0": []
     }
   ],
-  "publishTimestamp": 1782314874270
+  "publishTimestamp": 1782321094614
 }
